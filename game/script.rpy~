@@ -1,0 +1,24 @@
+﻿label start:
+    
+    stop music fadeout 2.0
+    
+    jump prolog1
+
+
+label chapter_select:
+    
+    stop music fadeout 2.0
+    
+    menu:
+
+        "Prolog":
+        
+            jump prolog1
+       
+        "Akt 1":
+            
+            jump akt1_1
+            
+return
+
+

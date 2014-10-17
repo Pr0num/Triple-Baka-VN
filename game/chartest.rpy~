@@ -1,0 +1,42 @@
+﻿#chardefines
+define p = Character('Panda')
+define po = Character('Panda und Orange')
+define o = Character('Orange', color="#ff6f00")
+
+#charbilder
+image p happy o erstaunt = "phappyoerstaunt.png"
+image p happy o happy = "phappyohappy.png"
+image p happy o neutral = "phappyoneutral.png"
+image p happy o normal = "phappyonormal.png"
+image p happy o schlaf = "phappyoschlaf.png"
+image p neutral o schlaf = "pneutraloschlaf.png"
+
+#BGs
+image bg paper = "paper.jpg"
+
+
+label chartest:
+        scene bg paper at truecenter
+        show p neutral o schlaf with moveintop
+        
+        p "Wo sind wir?" with hpunch(0.5)
+        
+        p "Hallo?"
+        
+        show p happy o schlaf with dissolve(0.2)
+        p "Hey, wir sind in der TB VN!"
+        
+        p "Orange, wach auf! Wir sind in der TB VN!"
+        
+        show p happy o normal with dissolve(0.2)
+        o "Hö? Was ist los? Was willst du?"
+        
+        show p happy o erstaunt with dissolve(0.2)
+        o "Warte, ist das die TB VN? Sie lebt?"
+        
+        p "Jawohl, meine Orange!"
+        
+        show p happy o happy with dissolve(0.2)
+        o "Exzellent, weitermachen."
+        
+        return
